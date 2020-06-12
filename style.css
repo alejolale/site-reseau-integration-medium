@@ -31,6 +31,7 @@ body  {
     justify-content: space-around;
     list-style: none;
     padding: 10px;
+    width: 100%;
 }
 
 .linkto {
@@ -90,6 +91,8 @@ body  {
 .article {
     margin: 16px 16px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .article:first-child {
@@ -118,6 +121,11 @@ body  {
     font-size: 12px;
     line-height: 14px;
     color: rgba(0, 0, 0, 0.38);
+}
+
+.article_photo {
+    align-self: center;
+    width: 100%;
 }
 
 .article p {
@@ -213,4 +221,31 @@ body  {
 
 .add:hover::before {
     filter: grayscale(0);
+}
+
+@media (min-width: 800px) {
+    .article_photo {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1152px) {
+    .header nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title {
+        margin-left: 51px;
+    }
+
+    .header ul{
+        margin-right: 51px;
+        width: 40%;
+    }
+
+    .article_photo {
+        width: 100%;
+    }
 }
