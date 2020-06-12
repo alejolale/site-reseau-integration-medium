@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+body  {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.header .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    padding: 18px;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+.linkto {
+    text-decoration: none;
+    color: white;
+
+}
+
+.linkto:hover {
+    text-decoration: underline;
+}
