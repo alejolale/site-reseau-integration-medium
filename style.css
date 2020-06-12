@@ -4,6 +4,7 @@
 
 body  {
     font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
 }
 
 .header {
@@ -34,10 +35,53 @@ body  {
 
 .linkto {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.67);
 
 }
 
 .linkto:hover {
-    text-decoration: underline;
+    color: #fff;
+}
+
+.navigation_links ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.navigation_links li {
+    list-style: none;
+    width: 180px;
+}
+
+.navigation_item {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.67);
+    font-size: 12px;
+    line-height: 28px;
+    text-align: left;
+    display: block;
+    width: 180px;
+    height: 26px;
+    padding-bottom: 10px;
+}
+
+.navigation_item::before {
+    content: attr(key-content);
+    filter: grayscale(1);
+    margin: 0 15px;
+}
+
+.navigation_item:hover::before {
+    filter: grayscale(0);
+}
+
+.navigation_item:hover {
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: rgba(0, 0, 0);
+    font-weight: bold;
 }
