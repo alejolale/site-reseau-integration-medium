@@ -157,3 +157,60 @@ body  {
     color: #BDBDBD;
     margin-right: 8px;
 }
+
+.suggestion {
+    margin: 16px 16px;
+}
+
+.suggestion h3 {
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.suggestion_person {
+    margin: 16px 0;
+    display: flex;
+}
+
+.suggestion_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    position: relative;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.friends {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.65);
+    margin-top: 8px;
+}
+
+.add {
+    position: absolute;
+    bottom: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.add::before {
+    content: attr(key-content);
+    filter: grayscale(1);
+    margin: 0 8px;
+}
+
+.add:hover::before {
+    filter: grayscale(0);
+}
