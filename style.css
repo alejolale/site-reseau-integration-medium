@@ -226,7 +226,7 @@ body  {
 }
 
 .add:hover::before {
-    filter: grayscale(0);
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
 @media (min-width: 800px) {
